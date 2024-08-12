@@ -13,8 +13,8 @@ public class MyControllerAdvice {
 
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
-    public Map errorHandler(Exception ex) {
-        Map map = new HashMap();
+    public Map<String,Object> errorHandler(Exception ex) {
+        Map<String,Object> map = new HashMap<String,Object>();
         map.put("code", 100);
         map.put("msg", ex.getMessage());
         return map;
@@ -22,8 +22,8 @@ public class MyControllerAdvice {
 
     @ResponseBody
     @ExceptionHandler(value = GlobalExceptionHandler.class)
-    public Map globalErrorHandler(GlobalExceptionHandler gx) {
-        Map map = new HashMap();
+    public Map<String,Object> globalErrorHandler(GlobalExceptionHandler gx) {
+        Map<String,Object> map = new HashMap<String,Object>();
         map.put("code",gx.getCode());
         map.put("msg",gx.getMsg());
         return map;
