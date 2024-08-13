@@ -9,6 +9,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 
 @Service
@@ -27,8 +30,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             throw new RuntimeException("用户名或密码错误");
         }
         //根据用户查询权限信息 添加到LoginUser中
+        List<String> list = new ArrayList<>(Arrays.asList("test"));
 
         //封装成UserDetails对象返回
-        return new LoginUser(user);
+        return new LoginUser(user,list);
     }
 }
