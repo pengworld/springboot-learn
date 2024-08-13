@@ -5,3 +5,5 @@ springboot learn
 2.spring security 权限控制  
 @PreAuthorize @PostAuthorize  方法调用前或者调用后进行权限检查
 @PreFilter @PostFilter        对集合类型的参数或者返回值进行过滤
+
+3.JWT token身份认证
