@@ -1,5 +1,7 @@
 package com.peng.demo.domain.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,6 +15,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@TableName(value = "sys_user")
 public class User implements Serializable {
 
     private static final long serialVersionUID = -40356785423868312L;
@@ -20,6 +23,7 @@ public class User implements Serializable {
     /**
      * 主键
      */
+    @TableId
     private Long id;
 
     /**
