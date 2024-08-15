@@ -23,10 +23,8 @@ public class MapperTest {
 
     @Test
     public void testUserMapper() {
-        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
-        wrapper.eq(User::getUserName, "admin");
-        User user = userMapper.selectOne(wrapper);
-        System.out.println(user);
+        List<User> users = userMapper.selectList(null);
+        System.out.println(users);
     }
 
     @Test
