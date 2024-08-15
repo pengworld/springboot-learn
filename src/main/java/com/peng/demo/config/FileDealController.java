@@ -1,5 +1,6 @@
 package com.peng.demo.config;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -13,7 +14,7 @@ import java.net.SocketException;
 @RequestMapping("/file")
 @RestController
 public class FileDealController {
-    @RequestMapping(value = "upload")
+    @PostMapping(value = "upload")
     public String upload(MultipartFile file) throws SocketException, IOException {
         //获取文件名
         String fileName = file.getOriginalFilename();
