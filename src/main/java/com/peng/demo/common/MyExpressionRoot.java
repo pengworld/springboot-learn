@@ -9,6 +9,7 @@ import java.util.List;
 
 @Component("ex")
 public class MyExpressionRoot {
+    //自定义权限校验
     public boolean hasAuthority(String authority) {
         //获取当前用户的权限
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
