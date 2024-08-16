@@ -37,6 +37,7 @@ public class FileDealController {
     }
 
 
+    //响应输出流 输出到前端
     @RequestMapping("/download")
     public void download(String path, HttpServletResponse response) {
         try {
@@ -78,8 +79,14 @@ public class FileDealController {
         byte[] buf = new byte[1024];
         int len;
         while ((len = inputStream.read(buf)) > 0) {
-            outputStream.write(buf,0,len);
+            outputStream.write(buf, 0, len);
         }
         inputStream.close();
+    }
+
+    //下载网络文件到本地
+    @RequestMapping("/downloadNet")
+    public void downloadNet(String netAddress, String path) throws IOException{
+
     }
 }
