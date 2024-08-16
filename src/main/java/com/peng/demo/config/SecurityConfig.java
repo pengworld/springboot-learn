@@ -1,6 +1,7 @@
 package com.peng.demo.config;
 
 import com.peng.demo.handler.filter.JwtAuthenticationTokenFilter;
+import com.peng.demo.handler.security.MySuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,8 +25,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private AuthenticationEntryPoint authenticationEntryPoint;
+
     @Autowired
     private AccessDeniedHandler accessDeniedHandler;
+
+    @Autowired
+    private MySuccessHandler mySuccessHandler;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -57,6 +62,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         //允许跨域
         http.cors();
+
+        //认证成功处理器
+        http.formLogin().successHandler(mySuccessHandler);
 
     }
 
