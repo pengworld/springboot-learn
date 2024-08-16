@@ -19,10 +19,10 @@ import java.util.Objects;
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-    @Resource
+    @Autowired
     private UserMapper userMapper;
 
-    @Resource
+    @Autowired
     private MenuMapper menuMapper;
 
     @Override
