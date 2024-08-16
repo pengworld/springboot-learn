@@ -1,4 +1,9 @@
 package com.peng.demo.dao;
 
-public interface AnswerMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.peng.demo.domain.entity.Answer;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AnswerMapper extends BaseMapper<Answer> {
 }
