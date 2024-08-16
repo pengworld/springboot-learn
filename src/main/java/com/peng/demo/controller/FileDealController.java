@@ -37,7 +37,7 @@ public class FileDealController {
     }
 
 
-    //响应输出流 输出到前端
+    //文件读取到内存中 响应输出流 输出到前端
     @RequestMapping("/download")
     public void download(String path, HttpServletResponse response) {
         try {
