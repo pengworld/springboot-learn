@@ -14,3 +14,6 @@ springboot learn
 5.自定义注解 权限校验 日志处理 统计等
 @Before @After @Around @AfterReturning @AfterThrowing
 
+6.自定义配置信息
+@ConfigurationProperties  @EnableConfigurationProperties
+
