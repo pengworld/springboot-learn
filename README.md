@@ -21,3 +21,15 @@ springboot learn
 
 8.@PathVariable注解
 
+springboot常用注解
+@SpringBootApplication
+@Component、@Service、@Controller、@Repository
+@ResponseBody
+@RestController
+@AutoWired、@Qualifier、@Resource
+@RequestMapping、@GetMapping、@PostMapping
+@Value、@ConfigurationProperties、@PropertySource
+@Configuration、@Bean
+@RequestParam、@RequestBody、@PathVariable、@RequestHeader、@CookieValue
+
+
