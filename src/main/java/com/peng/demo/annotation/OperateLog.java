@@ -7,10 +7,10 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface OperateLog {
-    String LogName() default "操作日志";
+    String logName() default "操作日志";
 
-    String logType();
+    String logType();   //日志类型 增add  删del 改update 查select
 
-    String logModule();
+    String logModule(); //日志模块
 }
 
