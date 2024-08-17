@@ -19,3 +19,5 @@ springboot learn
 
 7.@Profile @Value
 
+8.@PathVariable注解
+
