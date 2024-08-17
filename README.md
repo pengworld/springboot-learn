@@ -17,3 +17,5 @@ springboot learn
 6.自定义配置信息
 @ConfigurationProperties  @EnableConfigurationProperties
 
+7.@Profile @Value
+
