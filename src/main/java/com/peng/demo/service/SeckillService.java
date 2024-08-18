@@ -13,7 +13,7 @@ public interface SeckillService {
     List<Seckill> findAll();
 
     /**
-     * 根据秒杀物品id 获取一条商品秒杀信息
+     * 根据秒杀物品id 获取一条商品秒杀订单信息
      */
     SeckillOrder findById(long seckillId);
 
