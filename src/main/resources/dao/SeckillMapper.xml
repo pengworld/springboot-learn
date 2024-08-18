@@ -12,7 +12,15 @@
 
 
     <select id="findAll" resultType="com.peng.demo.domain.entity.Seckill">
-        SELECT * FROM seckill
+        SELECT *
+        FROM seckill
+    </select>
+
+
+    <select id="findById" resultType="com.peng.demo.domain.entity.Seckill">
+        SELECT *
+        FROM seckill
+        WHERE seckill_id = #{seckillId}
     </select>
 
 </mapper>
