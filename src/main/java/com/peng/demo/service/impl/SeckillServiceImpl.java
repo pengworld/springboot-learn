@@ -38,8 +38,8 @@ public class SeckillServiceImpl implements SeckillService {
     }
 
     @Override
-    public SeckillOrder findById(long seckillId) {
-        return seckillOrderMapper.findById(seckillId);
+    public Seckill findById(long seckillId) {
+        return seckillMapper.findById(seckillId);
     }
 
     @Override

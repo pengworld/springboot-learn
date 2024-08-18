@@ -18,7 +18,7 @@ public interface SeckillService {
     /**
      * 根据秒杀物品id 获取一条商品秒杀订单信息
      */
-    SeckillOrder findById(long seckillId);
+    Seckill findById(long seckillId);
 
     /**
      * 秒杀开始时输出暴露秒杀的地址 否者输出系统时间和秒杀时间
