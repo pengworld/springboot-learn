@@ -1,6 +1,9 @@
 package com.peng.demo.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
@@ -10,6 +13,9 @@ import java.util.Date;
 /**
  * 秒杀订单表实体类（seckill_order）
  * */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class SeckillOrder implements Serializable {
 
     /**

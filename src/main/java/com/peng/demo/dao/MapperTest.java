@@ -3,6 +3,8 @@ package com.peng.demo.dao;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.peng.demo.DemoApplication;
 import com.peng.demo.domain.entity.Answer;
+import com.peng.demo.domain.entity.Seckill;
+import com.peng.demo.domain.entity.SeckillOrder;
 import com.peng.demo.domain.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,6 +27,9 @@ public class MapperTest {
     @Autowired
     private AnswerMapper answerMapper;
 
+    @Autowired
+    private SeckillMapper seckillMapper;
+
     @Test
     public void testUserMapper() {
         List<User> users = userMapper.selectList(null);
@@ -46,5 +51,12 @@ public class MapperTest {
             System.out.println(answer.getId() + "==" + answer.getSelections());
         }
     }
+
+    @Test
+    public void findById() {
+        SeckillOrder seckillOrder = seckillMapper.findById(1);
+        System.out.println(seckillOrder.getSeckillId());
+    }
+
 }
 
