@@ -10,4 +10,9 @@
           AND stock_count &gt; 0
     </update>
 
+
+    <select id="findAll" resultType="com.peng.demo.domain.entity.Seckill">
+        SELECT * FROM seckill
+    </select>
+
 </mapper>
