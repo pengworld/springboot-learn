@@ -28,7 +28,7 @@ public class MapperTest {
     private AnswerMapper answerMapper;
 
     @Autowired
-    private SeckillMapper seckillMapper;
+    private SeckillOrderMapper seckillOrderMapper;
 
     @Test
     public void testUserMapper() {
@@ -54,7 +54,7 @@ public class MapperTest {
 
     @Test
     public void findById() {
-        SeckillOrder seckillOrder = seckillMapper.findById(1);
+        SeckillOrder seckillOrder = seckillOrderMapper.findById(1);
         System.out.println(seckillOrder.getSeckillId());
     }
 
