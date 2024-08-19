@@ -15,7 +15,7 @@ public class RedisConfig {
     private RedisConnectionFactory connectionFactory = null;
 
     @Bean(name = "redisConnectionFactory")
-    public RedisConnectionFactory initConnectionFactory() {
+    public RedisConnectionFactory initConnectionFactory(RedisConnectionFactory redisConnectionFactory) {
         if (this.connectionFactory != null) {
             return this.connectionFactory;
         }

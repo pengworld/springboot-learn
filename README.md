@@ -22,6 +22,9 @@ springboot learn
 8.@PathVariable注解
 
 9.@EnableAsync 启用异步注解
+java.util.concurrent
+hutool cn.hutool.core.thread
+guava  com.google.common.util.concurrent
 
 springboot常用注解
 @SpringBootApplication
