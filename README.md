@@ -21,6 +21,8 @@ springboot learn
 
 8.@PathVariable注解
 
+9.@EnableAsync 启用异步注解
+
 springboot常用注解
 @SpringBootApplication
 @Component、@Service、@Controller、@Repository
