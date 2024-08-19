@@ -33,3 +33,15 @@ springboot常用注解
 @RequestParam、@RequestBody、@PathVariable、@RequestHeader、@CookieValue
 
 
+API接口的安全措施：
+使用HTTPS  使用OAuth2认证 使用API网关
+接口验证
+使用WebAuthn
+API进行加密签名
+API版本控制   get/v1/user/123
+授权 流控
+只允许请求的接口
+使用工具检测漏洞
+正确的错误处理
+
+
