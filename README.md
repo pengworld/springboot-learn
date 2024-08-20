@@ -23,8 +23,8 @@ springboot learn
 
 9.@EnableAsync 启用异步注解    @Async注解
 AsyncConfigurer
-
 ThreadPoolExecutor ThreadPoolTaskExecutor
+
 java.util.concurrent
 hutool cn.hutool.core.thread
 guava  com.google.common.util.concurrent
