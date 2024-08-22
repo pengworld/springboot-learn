@@ -29,6 +29,8 @@ java.util.concurrent
 hutool cn.hutool.core.thread
 guava  com.google.common.util.concurrent
 
+10.quartz定时任务
+
 springboot常用注解
 @SpringBootApplication
 @Component、@Service、@Controller、@Repository
